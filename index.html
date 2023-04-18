@@ -15,9 +15,8 @@
     <header id = "header" class = "vh-100 flex">
         <div class = "container">
             <div class = "header-content">
-                <h1>Soy <br>fotógrafa</h1>
-                <h3>Angeles Barroso</h3>
-
+                <h1>Angeles <br>Barroso</h1>
+                <h3>Fotógrafa</h3>
                 <ul class = "social-links">
                     <li>
                         <a href="https://www.facebook.com/profile.php?id=100085965347458" class = "flex">
@@ -27,6 +26,11 @@
                     <li>
                         <a href = "https://www.instagram.com/angelesbarrosofotografia/" class = "flex">
                             <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://www.behance.net/angelesbarroso" class = "flex">
+                            <i class = "fab fa-behance"></i>
                         </a>
                     </li>
                 </ul>
@@ -49,6 +53,7 @@
                             <h2>Sobre mí</h2>
                         </div>
                         <p class = "lead">Angeles es una fotográfa en proceso de aprendizaje, combinando cursos junto con la pizca de ser autodidacta. En busca del profesionalismo, se interesa por intercalar los paisajes y eventos.</p>
+                        <p class = "lead">En su trayecto busca absorber la mayor experiencia posible para nutrir su pasión.</p>
                         <a href = "#work" class = "btn-down">
                             <i class = "fas fa-chevron-down"></i>
                         </a>
@@ -158,12 +163,27 @@
                             <i class = "fas fa-chevron-down"></i>
                         </a>
                     </div>
-                    <div class = "insta-grid grid">
+                        <div id="instafeed-container" class="insta-grid grid">
+                        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+                    <script type="text/javascript">
+                    var userFeed = new Instafeed({
+                        get: 'user',
+                        target: "instafeed-container",
+                        resolution: 'low_resolution',
+                        accessToken: 'IGQVJXSGhLQWFkaldxRTkzeHRkV0FsWEcxb0NEdVNNdDk1TVZAUYnNoTDM5bGw1ejE4Y2NLOHJFYUJzNjkyaHlnNnhfQTlHZA0ZAwdzRWaW5WamJ2bTU1ZAzRsclhLQldZAbWdfd3Y2dGhn',
+                        limit: 4
+                    });
+                    userFeed.run();
+                    </script>
+                    </div>
+
+                    
+                    <!-- <div class = "insta-grid grid">
                         <div><img src = "images/port-1.jpg"></div>
                         <div><img src = "images/port-2.jpg"></div>
                         <div><img src = "images/port-3.jpg"></div>
                         <div><img src = "images/port-4.jpg"></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -177,7 +197,7 @@
             <div class = "footer-content">
                 <div>
                     <h3>ANGELES BARROSO</h3>
-                    <div><img src = "images/about-pic.jpg"></div>
+                    <div><img src = "images/footer-pic.png"></div>
                 </div>
 
                 <div>

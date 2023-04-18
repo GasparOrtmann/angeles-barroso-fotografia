@@ -118,7 +118,7 @@ h1, h2, h3{
 /* about */
 .about-left{
     margin-bottom: 4rem;
-    height: 480px;
+    /* height: 480px; */
     overflow: hidden;
 }
 /* button down and title -reusable */
@@ -224,6 +224,7 @@ h1, h2, h3{
     background-color: #000;
 }
 
+/* instagram */
 #insta{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/insta-pic.jpg') center/cover no-repeat fixed;
     min-height: 65vh;
