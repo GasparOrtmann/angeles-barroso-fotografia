@@ -138,10 +138,11 @@
                         </div>
                         <p class = "lead"><i class = "fas fa-phone-alt"></i> +54 9 11 6290-3988</p>
                         <p class = "lead"><i class = "fas fa-envelope"></i> angelesbarrosofotografia@gmail.com</p>
-                        <form action="">
-                            <input type = "text" class = "form-control" placeholder="Tu nombre ...">
-                            <input type = "email" class = "form-control" placeholder="Tu mail aquí">
-                            <input type = "submit" class = "btn-submit btn" value = "Enviar">
+                        <form action="https://formsubmit.co/angelesbarrosofotografia@gmail.com" method="POST">
+                            <input name="name" type = "text" class = "form-control" placeholder="Tu nombre..." required>
+                            <input name="email" type = "email" class = "form-control" placeholder="Tu email aquí" required>
+                            <textarea name="message" rows="8" class = "form-control" placeholder="Tu mensaje aquí" required></textarea>
+                            <input name="send" type = "submit" class = "btn-submit btn" value = "Enviar">
                         </form>
                     </div>
 
