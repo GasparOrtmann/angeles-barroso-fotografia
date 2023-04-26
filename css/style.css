@@ -82,8 +82,16 @@ h1, h2, h3{
 #header .container{
     width: 100%;
 }
+.translate{
+    display: block;
+    align-self: self-start;
+    margin-top: 3rem;
+    margin-right: 4rem;
+}
+
 .header-content{
     padding-bottom: 4rem;
+    padding-left: 7rem;
 }
 .header-content h1{
     font-size: 4.5rem;
