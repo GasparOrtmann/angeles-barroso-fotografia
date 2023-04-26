@@ -339,7 +339,7 @@ h1, h2, h3{
         flex-direction: row;
     }
     .contact-right{
-        padding-left: 3rem;
+        padding-left: 1rem;
         width: 50%;
     }
     .contact-left{
