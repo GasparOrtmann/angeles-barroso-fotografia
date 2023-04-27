@@ -206,7 +206,7 @@ h1, h2, h3{
     .translate{
         display: flex;
         align-self: self-start;
-        margin-top: 2.6rem;
+        margin: 2.6rem 0 0 0;
     }
 }
 /* about */
@@ -385,11 +385,14 @@ h1, h2, h3{
 
 /* Media Queries */
 
-@media(min-width: 450px){
+@media(min-width: 390px){
     .work-bottom{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
         row-gap: 0;
+    }
+    .translate{
+        display: flex;
     }
 }
 @media(min-width: 576px){
@@ -443,6 +446,9 @@ h1, h2, h3{
     }
     .insta-grid{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .translate{
+        margin-top: 2.3rem;
     }
 }
 
