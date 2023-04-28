@@ -176,6 +176,7 @@ h1, h2, h3{
         flex-direction: column;
         position: absolute;
         align-items: end;
+        min-height: 100vh;
         gap: 1rem;
         top: 0;
         right: 0;
