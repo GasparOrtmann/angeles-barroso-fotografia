@@ -87,6 +87,9 @@ h1, h2, h3{
 }
 #header .container{
     width: 100%;
+    height: 100%;
+    display: flex;
+    min-height: 90vh;
 }
 #header.shadow{
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('../images/header-banner.jpg') center/cover no-repeat fixed;
@@ -94,13 +97,13 @@ h1, h2, h3{
 .translate{
     display: flex;
     align-self: self-start;
-    margin-top: 3rem;
-    margin-right: 4rem;
+    max-width: 1280px;
 }
 
 .header-content{
     padding-bottom: 4rem;
     padding-left: 7rem;
+    margin-top: auto;
 }
 .header-content h1{
     font-size: 4.5rem;
@@ -134,6 +137,14 @@ h1, h2, h3{
 
 .nav{
     display: none;
+}
+
+.nav-translate{
+    display: flex;
+    max-width: 1200px;
+    min-height: 10vh;
+    margin: 0 auto;
+    justify-content: right;
 }
 
 .open-menu,
@@ -464,9 +475,6 @@ h1, h2, h3{
     }
     .insta-grid{
         grid-template-columns: repeat(2, 1fr);
-    }
-    .translate{
-        margin-top: 2.3rem;
     }
 }
 
