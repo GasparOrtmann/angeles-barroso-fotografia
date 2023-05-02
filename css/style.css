@@ -39,6 +39,11 @@ img{
     width: 100%;
     display: block;
 }
+
+img.shadow{
+    background-color: rgba(0, 0, 0, 70%);
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -82,6 +87,9 @@ h1, h2, h3{
 }
 #header .container{
     width: 100%;
+}
+#header.shadow{
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url('../images/header-banner.jpg') center/cover no-repeat fixed;
 }
 .translate{
     display: flex;
@@ -182,7 +190,7 @@ h1, h2, h3{
         right: 0;
         bottom: 0;
         background-color: var(--dark-color);
-        padding: 2rem;
+        padding: 3rem;
         box-shadow: 0 0 100px 0vmax rgba(0,0,0,.5);
     }
 
@@ -212,7 +220,7 @@ h1, h2, h3{
     .translate{
         display: flex;
         align-self: self-start;
-        margin: 2.6rem 0 0 0;
+        margin: 2.8rem 0 0 0;
     }
 }
 /* about */
