@@ -136,17 +136,6 @@ h1, h2, h3{
     display: none;
 }
 
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
-}
-
 .open-menu,
 .close-menu{
     display: none;
@@ -183,7 +172,9 @@ h1, h2, h3{
         display: flex;
         flex-direction: column;
         position: absolute;
-        align-items: end;
+        width: 50%;
+        height: 50%;
+        align-items: center;
         min-height: 100vh;
         gap: 2rem;
         top: 0;
@@ -197,20 +188,31 @@ h1, h2, h3{
     .nav.visible{
         opacity: 1;
         visibility: visible;
+        display: fixed;
     }
 
     .nav-list{
         flex-direction: column;
         align-items: end;
-        display: inline-block;
+        display: fixed;
         transition: var(--transition);
     }
 
     .nav-list a{
         
     }
-    .nav-list li a{
+    .nav-list li{
+        padding: 0 0 2rem 0;
+    }
+    .nav-list li a {
+        text-decoration: none;
         color: var(--light-color);
+        font-size: 2rem;
+    }
+
+    .p-nav{
+        color: var(--light-color);
+        padding: 0 1rem;
     }
 
     .button i {
