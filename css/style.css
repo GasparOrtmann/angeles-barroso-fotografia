@@ -185,7 +185,7 @@ h1, h2, h3{
         position: absolute;
         align-items: end;
         min-height: 100vh;
-        gap: 1rem;
+        gap: 2rem;
         top: 0;
         right: 0;
         bottom: 0;
@@ -217,10 +217,12 @@ h1, h2, h3{
         size: 1rem;
     }
 
-    .translate{
+    .translate-btn{
+        display: none;
+    }
+
+    .translate-mobile{
         display: flex;
-        align-self: self-start;
-        margin: 2.8rem 0 0 0;
     }
 }
 /* about */
