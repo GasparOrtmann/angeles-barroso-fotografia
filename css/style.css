@@ -146,6 +146,77 @@ h1, h2, h3{
     margin: 0 auto;
     justify-content: right;
     padding: 3rem 0;
+    line-height: 2;
+    color: var(--light-color);
+}
+
+.nav-translate ul{
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-color);
+    /* border: 1px solid var(--dark-color); */
+    box-shadow: 0px 1px 10px var(--dark-color);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.nav-translate ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-translate ul li a{
+    width: 120px;
+    display: block;
+    padding: 5px 10px;
+    color: var(--light-color);
+}
+
+.nav-translate ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    vertical-align: middle;
+    /* background-image: url(../images/icon-usa.png); */
+}
+
+.nav-translate ul li a:hover{
+    background-color: var(--dark-color);
+}
+
+.es:before{
+    background-image: url(../images/icon-arg.png);
+}
+
+.us:before{
+    background-image: url(../images/icon-usa.png);
+}
+
+.nav-translate:hover ul{
+    display: block;
+}
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.selected-lang i{
+    padding-top: .60rem;
+}
+
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    background-image: url(../images/icon-arg.png);
 }
 
 .translate-btn{
@@ -157,6 +228,19 @@ h1, h2, h3{
 .close-menu{
     display: none;
 }
+
+.nav-mobile{
+    display: flex;
+    max-width: 1200px;
+    min-height: 10vh;
+    margin: 0 auto;
+    justify-content: right;
+    padding: 3rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    display: none;
+}
+
 
 @media (max-width: 768px) {
     .open-menu,
@@ -173,7 +257,7 @@ h1, h2, h3{
         color: var(--light-color);
         display: flex;
         align-self: self-start;
-        margin: 2rem;
+        margin-right: 2rem;
     }
 
     .close-menu {
@@ -242,6 +326,12 @@ h1, h2, h3{
 
     .translate-mobile{
         display: flex;
+    }
+    .nav-mobile{
+        display: flex;
+    }
+    .nav-translate{
+        display: none;
     }
 }
 /* about */
