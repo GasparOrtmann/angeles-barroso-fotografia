@@ -145,6 +145,12 @@ h1, h2, h3{
     min-height: 10vh;
     margin: 0 auto;
     justify-content: right;
+    padding: 3rem 0;
+}
+
+.translate-btn{
+    margin: auto;
+    padding: 0 1rem;
 }
 
 .open-menu,
