@@ -154,7 +154,6 @@ h1, h2, h3{
     margin: 0;
     padding: 0;
     background-color: var(--gray-color);
-    /* border: 1px solid var(--dark-color); */
     box-shadow: 0px 1px 10px var(--dark-color);
     border-radius: 5px;
     display: none;
@@ -196,7 +195,7 @@ h1, h2, h3{
     background-image: url(../images/icon-usa.png);
 }
 
-.nav-translate:hover ul{
+.selected-lang:hover ul{
     display: block;
 }
 
@@ -216,7 +215,7 @@ h1, h2, h3{
     width: 32px;
     height: 32px;
     margin-right: 5px;
-    background-image: url(../images/icon-arg.png);
+    /* background-image: url(../images/icon-arg.png); */
 }
 
 .translate-btn{
