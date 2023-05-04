@@ -332,7 +332,8 @@ h1, h2, h3{
     .nav-translate{
         display: none;
     }
-    .selected-lang ul{
+    
+    .selected-lang-mobile ul{
         margin: 0;
         padding: 0;
         background-color: var(--gray-color);
@@ -342,48 +343,29 @@ h1, h2, h3{
         position: absolute;
     }
     
-    .selected-lang ul li{
+    .selected-lang-mobile ul li{
         list-style: none;
         display: flex;
         justify-content: space-between;
     }
-
-    .selected-lang{
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        margin-right: 2rem;
-    }
-    .selected-lang i{
-        padding-top: .60rem;
-    }
     
-    .selected-lang:before{
-        content: '';
-        display: block;
-        width: 32px;
-        height: 32px;
-        margin-right: 5px;
-        /* background-image: url(../images/icon-arg.png); */
-    }
-    .selected-lang ul li a{
+    .selected-lang-mobile ul li a{
         width: 120px;
         display: block;
         padding: 5px 10px;
         color: var(--light-color);
     }
     
-    .selected-lang ul li a:before{
+    .selected-lang-mobile ul li a:before{
         content: '';
         display: inline-block;
         width: 32px;
         height: 32px;
         margin-right: 5px;
         vertical-align: middle;
-        /* background-image: url(../images/icon-usa.png); */
     }
     
-    .selected-lang ul li a:hover{
+    .selected-lang-mobile ul li a:hover{
         background-color: var(--dark-color);
     }
     
@@ -395,9 +377,29 @@ h1, h2, h3{
         background-image: url(../images/icon-usa.png);
     }
     
-    .selected-lang:hover ul{
+    .selected-lang-mobile.visible ul{
         display: block;
     }
+    
+    .selected-lang-mobile{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2rem;
+    }
+    .selected-lang-mobile i{
+        padding-top: .60rem;
+    }
+    
+    .selected-lang-mobile:before{
+        content: '';
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+        /* background-image: url(../images/icon-arg.png); */
+    }
+    
 
 }
 /* about */
