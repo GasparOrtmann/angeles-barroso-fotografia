@@ -17,24 +17,6 @@
     <link rel = "stylesheet" href = "css/style.css">
 </head>
 <body>
-    <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '1614742259028852',
-            xfbml      : true,
-            version    : 'v16.0'
-          });
-          FB.AppEvents.logPageView();
-        };
-      
-        (function(d, s, id){
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement(s); js.id = id;
-           js.src = "https://connect.facebook.net/en_US/sdk.js";
-           fjs.parentNode.insertBefore(js, fjs);
-         }(document, 'script', 'facebook-jssdk'));
-      </script>
     <!-- header -->
     <header id = "header">
         <div class = "container">
@@ -236,32 +218,6 @@
                 </div>
             </div>
         </section>
-        <!-- instagram -->
-        <!-- <section id = "insta" class = "py-7">
-            <div class = "container">
-                <div class = "insta-content">
-                    <div class = "title">
-                        <h2>instagram</h2>
-                        <a href = "#footer" class = "btn-down">
-                            <i class = "fas fa-chevron-down"></i>
-                        </a>
-                    </div>
-                        <div id="instafeed-container" class="insta-grid grid">
-                        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-                    <script type="text/javascript">
-                    var userFeed = new Instafeed({
-                        get: 'user',
-                        target: "instafeed-container",
-                        resolution: 'low_resolution',
-                        accessToken: 'IGQVJXbXFYX3hzTHdWTjkyRk5pU05yNmNoc3E5eFJlQ0hFSzFfSWZA0NFRISl9jRVJyc0tfSEJiRi1QdHpDTTlPTkJYTFRNM3ZAFc3VycTMtV0NNck55ajdnbndkRk1YeDJVZAkdnNUtvMkIzeDRkbExVLQZDZD',
-                        limit: 4
-                    });
-                    userFeed.run();
-                    </script>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
 
     <!-- footer -->
